@@ -110,7 +110,6 @@ header{
     backdrop-filter: blur(5px);
     display: flex;
     align-items: center;
-    gap: 10px;
     margin-left:180px;
     margin-right: 5px;
     margin-top: 400px;
@@ -121,6 +120,7 @@ header{
 }
 .circle{
     color: #E6533C;
+    
 }
 .btn-blur1-des{
     font-weight: 100;
@@ -145,9 +145,11 @@ header{
 
 /* Sidebar Responsive */
 @media screen and (min-width: 575px) {
-    .sidebar{
+    .sidebar, .circle2{
         visibility: hidden;
     }
+
+    
 }
 
 /* Responsive for mobile device */
@@ -213,6 +215,11 @@ header{
         bottom:10%;
         right: 3%;
     }
-   
+    .circle{
+        visibility: hidden;
+    }
+    .circle2{
+        color: #E6533C;
+    }
     
 }
