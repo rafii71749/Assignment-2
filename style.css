@@ -4,7 +4,7 @@ body{
     font-family: Inter;
 }
 header{
-    background:url(images/Images\ 2.png), linear-gradient( to bottom, rgba(17, 17, 17, 1), rgba(119, 119, 119, 0)) ;
+    background:url(images/Images\ 2.png), linear-gradient( to bottom, rgba(17, 17, 17, 1), rgba(119, 119, 119, 0.2)) ;
     width: 100vw;
     height: 100vh;
     margin: -10px -10px -10px -8px;
@@ -56,6 +56,8 @@ header{
     border: none;
 }
 
+/* Banner 1 */
+
 .banner{
     display: flex;
     justify-content: space-between;
@@ -90,17 +92,127 @@ header{
     border-radius: 50px;
     border: none;
 }
-.container{
-    display: flex;
-}
-.btn-blur{
-    border: 1px solid white;
-    max-height: 10;
-}
-.btn-title{
-    font-size: 1rem;
+.btn3{
+    background-color: transparent;
     font-weight: 400;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    font-size: 1.12rem;
+    padding: 16px 40px;
+    border-radius: 50px;
+}
+
+.btn-blur-1{
     color: white;
-    line-height: 0px;
-    padding: 0em 0em 0em 0em;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 16px 40px;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left:180px;
+    margin-right: 5px;
+    margin-top: 400px;
+}
+.btn-blur1-title{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.circle{
+    color: #E6533C;
+}
+.btn-blur1-des{
+    font-weight: 100;
+    color: rgba(239, 237, 232, 0.65);
+}
+.btn-blur2-title{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.btn-blur-2{
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 16px 40px;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    
+}
+.btn-blur2-des{
+    font-weight: 100;
+    color: rgba(239, 237, 232, 0.65);
+}
+
+/* Sidebar Responsive */
+@media screen and (min-width: 575px) {
+    .sidebar{
+        visibility: hidden;
+    }
+}
+
+/* Responsive for mobile device */
+
+@media screen and (max-width: 576px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em;
+    }
+    .sidebar {
+        display: flex;
+        align-items: center;
+        padding: 1em;
+        gap: 1em;
+    }
+    .nav-text {
+        display: none;
+    }
+    .banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1em;
+        margin-right: 0;
+    }
+    .banner-title {
+        font-size: 1.5rem;
+        line-height: 1.2;
+        
+    }
+    .shape {
+        font-size: 6rem;
+    }
+    header {
+        width: 100vw;
+        height: 1040px;
+        margin: -10px -10px -10px -8px;
+        background-size: 60%, auto;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        padding-bottom: 20%;
+    }
+    .btn2, .btn3 {
+        font-size: 1rem;
+        padding: 10px 20px;
+        margin-top: 10px;
+    }
+    .btn-blur-1, .btn-blur-2 {
+        display: flex;
+        position: absolute;
+        bottom: 0%;
+        width: 40%;
+        padding: 10px ;
+    }
+    .btn-blur-1 {
+        right: 40%;
+       
+       
+    }
+    .btn-blur-2 {
+        bottom:10%;
+        right: 3%;
+    }
+   
+    
 }
