@@ -407,3 +407,77 @@ header{
         justify-content: center;
     }
 }
+
+/* banner 4 */
+.banner4{
+    margin-top: 50px;
+    justify-items: center;
+    text-align: center;
+    width: 100vw;
+}
+.card{
+    width: 250px;
+    height: 250px;
+    border-radius: 16px;
+    border: 0.5px solid #E6533C;
+    color: white;
+}
+.card-container{
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        padding-top: 50px;
+}
+.banner4 h2{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: white;
+}
+.fa-dumbbell, .fa-person-running, .fa-spa{
+    margin-top: 10px;
+    color: white;
+    font-size: 3rem;
+}
+.card h3{
+    color: #E6533C;
+    line-height: 0px;
+    font-size: 2rem;
+}
+.card p{
+    color: rgba(255, 255, 255, 0.5);
+}
+.card h4{
+    color: rgba(255, 255, 255, 0.5);
+}
+/* Banner 3 Responsive for mobile device */
+
+@media screen and (max-width: 576px) {
+    
+    .card-container{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        row-gap: 20px;
+}
+.banner4{
+    margin-top: 50px;
+    justify-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+}
+.card{
+   margin-left:60px;
+    margin-top: 20px;
+}
+.banner4 h2{
+    margin-top: 5%;
+    font-size: 2.5rem;
+    line-height: 50px;
+    padding-left: 15px;
+}
+}
